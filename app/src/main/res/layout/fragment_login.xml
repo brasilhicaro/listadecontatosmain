@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingHorizontal="30dp"
+    tools:context=".LoginFragment">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_margin="20dp"
+        android:src="@drawable/_4485759_5474059" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/baseline_person_24"
+            android:drawableLeft="@drawable/baseline_person_24"
+            android:gravity="center"
+            android:hint="@string/emailfield" />
+
+        <EditText
+            android:id="@+id/ed_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/baseline_lock_24"
+            android:drawableLeft="@drawable/baseline_lock_24"
+            android:gravity="center"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+
+        <CheckBox
+            android:id="@+id/cb_RememberUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cb_RememberUser" />
+
+        <Button
+            android:id="@+id/btn_Login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_cadastro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginVertical="20dp"
+        android:background="#00000000"
+        android:gravity="center"
+        android:text="@string/n_o_tem_conta_cadastre_se"
+        android:textColor="@color/black" />
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Lista de contatos</string>
+    <string name="password">Insira sua senha</string>
+    <string name="emailfield">Insira seu email</string>
+    <string name="cb_RememberUser">Lembrar-se de mim</string>
+    <string name="login">Login</string>
+    <string name="n_o_tem_conta_cadastre_se">Não tem conta? Cadastre-se!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nome_usuario">nome de usuario</string>
+    <string name="senha">senha</string>
+    <string name="confirmar_senha">confirmar senha</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="email">email</string>
+
+</resources>

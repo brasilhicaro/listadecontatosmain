@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.student.listadecontatos_main.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_cadastroFragment"
+            app:destination="@id/cadastroFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_listaFragment"
+            app:destination="@id/listaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cadastroFragment"
+        android:name="com.student.listadecontatos_main.CadastroFragment"
+        android:label="fragment_cadastro"
+        tools:layout="@layout/fragment_cadastro">
+        <action
+            android:id="@+id/action_cadastroFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listaFragment"
+        android:name="com.student.listadecontatos_main.ListaFragment"
+        android:label="fragment_lista"
+        tools:layout="@layout/fragment_lista">
+        <action
+            android:id="@+id/action_listaFragment_to_detalhesFragment"
+            app:destination="@id/detalhesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detalhesFragment"
+        android:name="com.student.listadecontatos_main.DetalhesFragment"
+        android:label="fragment_detalhes"
+        tools:layout="@layout/fragment_detalhes" />
+</navigation>
